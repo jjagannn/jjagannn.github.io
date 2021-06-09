@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300");
+
+* {
+    box-sizing: border-box;
+}
+html {
+    font-family: "Open Sans";
+    font-weight: 400;
+    letter-spacing: 1.5px;
+  }
+
+body {
+    margin: 0;
+    text-align: center;
+    background: white;
+    color: black;
+    font: 18px/1.4;
+}
+
+.header {
+    font-family: "Roboto";
+    padding: 16px;
+    text-align: center;
+    line-height: 1.7;
+    margin: 1em 0 15px;
+    padding: 60px 0 0 0;
+    margin: 0;
+    margin-top: 2px;
+    /*cursor: pointer;*/
+    font-style: normal;
+    font-size: 56px;
+    letter-spacing: 1px
+}
+
+p {
+    margin: 15px 0;
+    line-height: 100%;
+    line-height: 36px;
+  }
+
+.header h1 {
+    font-size: 40px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.main {
+    -ms-flex: 70%;
+    flex: 70%;
+    padding:20px;
+}
+
+.footer a {
+    display: inline-block;
+    color: gray;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.header img {
+    border-radius:50%;
+    max-height: 200px;
+}
+
+svg {
+    font-size: 2em;
+}
+
+.twitter path:hover {
+    fill: #00acee;
+}
+
+.github path:hover, .medium path:hover {
+    fill: black;
+}
+
+.linkedin path:hover {
+    fill: #0077b5;
+}
+
+.gmail, .medium{
+    fill: gray;
+}
+
+.gmail path:hover {
+    fill: #D44638;
+}
+
+#resume {
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(0.95,0.95);
+}
+
+.img-responsive {
+    
+    max-width: 42%;
+    height: auto;
+}
+
+/*Device screens with less than 700 px*/
+@media screen and (max-width:700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max width:400px) {
+    .navbar a {
+        float:none;
+        width: 100%;
+    }
+}
